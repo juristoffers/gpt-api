@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 app.use(express.json());
 
-const ETHERSCAN_API_KEY = 'UVV9W98IGNG6DWGTV4DDWJBUWQX6644EM9'; // Replace with your Etherscan API key
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 // Existing endpoint to fetch balance
 app.post('/get-eth-data', async (req, res) => {
