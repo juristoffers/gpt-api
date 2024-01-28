@@ -20,7 +20,7 @@ app.post('/get-eth-data', async (req, res) => {
     res.status(500).json({ message: 'Error fetching data from Etherscan', details: error.message });
   }
 });
-git
+
 
 console.log("Test")
 
